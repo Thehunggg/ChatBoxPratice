@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Điểm Nhậu 39 — Nhắn tin đặt bàn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ TOP NAV ============ -->
+<header class="topnav">
+  <div class="topnav-inner">
+    <div class="topnav-brand">
+      <span class="topnav-logo">🍻</span>
+      <span class="topnav-name">Điểm Nhậu 39</span>
+    </div>
+
+    <nav class="topnav-links">
+      <a href="#about">Trang chủ</a>
+      <a href="#posts">Bài viết</a>
+      <a href="#menu-section">Menu</a>
+      <a href="#reviews">Đánh giá</a>
+    </nav>
+
+    <button class="topnav-cta" id="messageBtn">Nhắn tin</button>
+  </div>
+</header>
+
+
+<!-- ============ COVER + PROFILE ============ -->
+<section class="cover">
+  <div class="cover-photo"></div>
+
+  <div class="profile-block">
+    <div class="avatar">🍻</div>
+
+    <div class="biz-meta">
+      <h1>Điểm Nhậu 39</h1>
+
+      <div class="category">
+        Quán nhậu · Đồ nướng &amp; Lẩu · Hải Phòng
+      </div>
+
+      <div class="rating-row">
+        <span class="stars">★★★★★</span>
+        <span class="rating-num">4.8</span>
+        <span class="dot">·</span>
+        <span>236 đánh giá</span>
+        <span class="badge-open">Đang mở cửa</span>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-primary" id="openChatBtn2">Nhắn tin đặt bàn</button>
+        <button class="btn-secondary">👍 Thích</button>
+        <button class="btn-secondary">＋ Theo dõi</button>
+        <button class="btn-secondary">↗ Chia sẻ</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ MAIN LAYOUT ============ -->
+<main class="layout">
+  <div class="main-col">
+
+    <section class="card" id="about">
+      <h2>Giới thiệu</h2>
+      <p>
+        Điểm Nhậu 39 là quán nhậu bình dân ở Gia Viên, Hải Phòng — chuyên đồ nướng, lòng dạ,
+        hải sản, lẩu và bia hơi mát lạnh. Không gian thoáng, món ăn đa dạng từ khai vị nhẹ nhàng
+        đến lẩu nóng cho cả nhóm đông, hợp cho tụ tập bạn bè hay liên hoan cơ quan sau giờ làm.
+      </p>
+    </section>
+
+
+    <section class="card" id="posts">
+      <h2>Bài viết gần đây</h2>
+
+      <div class="post-grid">
+
+        <article class="post-card">
+          <div class="post-image post-image-1"></div>
+
+          <div class="post-body">
+            <h3>Tối nay có mực nướng sa tế mới về</h3>
+            <p>
+              Mực tươi size to, nướng sa tế thơm lừng — làm vài chai bia hơi là hết ý.
+            </p>
+
+            <div class="post-stats">
+              <span>👍 128</span>
+              <span>💬 24</span>
+              <span>↗ 9</span>
+            </div>
+
+            <button class="post-cta" data-open-chat>
+              Nhắn tin đặt bàn
+            </button>
+          </div>
+        </article>
+
+
+        <article class="post-card">
+          <div class="post-image post-image-2"></div>
+
+          <div class="post-body">
+            <h3>Lẩu Thái &amp; lẩu cua đồng cho nhóm</h3>
+            <p>
+              Trời se lạnh làm nồi lẩu cho cả nhóm là chuẩn bài — đặt trước để quán chuẩn bị nguyên liệu tươi.
+            </p>
+
+            <div class="post-stats">
+              <span>👍 96</span>
+              <span>💬 15</span>
+              <span>↗ 6</span>
+            </div>
+
+            <button class="post-cta" data-open-chat>
+              Nhắn tin đặt bàn
+            </button>
+          </div>
+        </article>
+
+
+        <article class="post-card">
+          <div class="post-image post-image-3"></div>
+
+          <div class="post-body">
+            <h3>Bia hơi HN mát lạnh mỗi ngày</h3>
+            <p>
+              Bia hơi + chân gà chiên mắm + lạc rang — bộ ba huyền thoại cho buổi tối lai rai.
+            </p>
+
+            <div class="post-stats">
+              <span>👍 74</span>
+              <span>💬 11</span>
+              <span>↗ 4</span>
+            </div>
+
+            <button class="post-cta" data-open-chat>
+              Nhắn tin đặt bàn
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="card owner-section" id="owner-value">
+      <h2>Chatbot này giúp gì được cho quán</h2>
+
+      <div class="value-grid">
+
+        <div class="value-card">
+          <span class="value-icon">💬</span>
+          <h4>Tự động trả lời câu hỏi thường gặp</h4>
+          <p>Giờ mở cửa, menu, địa chỉ — trả lời ngay, kể cả lúc quán đang đông khách.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">📅</span>
+          <h4>Nhận yêu cầu đặt bàn</h4>
+          <p>Khách đặt bàn ngay trong khung chat, không cần gọi điện.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">🌏</span>
+          <h4>Hỗ trợ đa ngôn ngữ</h4>
+          <p>Tiếng Việt, English, 日本語 — sẵn sàng ngay từ đầu.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">📥</span>
+          <h4>Không bỏ sót tin nhắn</h4>
+          <p>Giờ cao điểm không còn sợ quên trả lời khách.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">⏱️</span>
+          <h4>Đỡ mất thời gian trả lời lặp lại</h4>
+          <p>Bot xử lý những câu hỏi lặp đi lặp lại mỗi ngày.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">📤</span>
+          <h4>Báo ngay khi cần nhân viên</h4>
+          <p>Khi khách cần hỗ trợ trực tiếp, hệ thống ghi nhận ngay lập tức.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">✨</span>
+          <h4>Trải nghiệm khách tốt hơn</h4>
+          <p>Trả lời nhanh, đúng ngôn ngữ khách đang dùng.</p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-icon">🛠️</span>
+          <h4>Dễ tuỳ chỉnh</h4>
+          <p>Đổi menu, giờ giấc, thông tin quán chỉ trong vài phút.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="card demo-flow-section">
+      <h2>Gợi ý cách xem demo</h2>
+
+      <ol class="demo-steps">
+        <li>
+          <span class="step-num">1</span>
+          Bấm "Nhắn tin"
+        </li>
+
+        <li>
+          <span class="step-num">2</span>
+          Chọn ngôn ngữ
+        </li>
+
+        <li>
+          <span class="step-num">3</span>
+          Hỏi menu hoặc giờ mở cửa
+        </li>
+
+        <li>
+          <span class="step-num">4</span>
+          Thử đặt bàn
+        </li>
+      </ol>
+    </section>
+
+  </div>
+
+
+  <aside class="side-col">
+    <section class="card info-card" id="menu-section">
+      <h2>Thông tin quán</h2>
+
+      <div class="info-row">
+        <span class="info-label">📍 Địa chỉ</span>
+        <span id="infoAddress" class="info-value"></span>
+      </div>
+
+      <div class="info-row">
+        <span class="info-label">📞 Hotline</span>
+        <span id="infoHotline" class="info-value"></span>
+      </div>
+
+      <div class="info-row">
+        <span class="info-label">🕐 Giờ mở cửa</span>
+        <span id="infoHours" class="info-value"></span>
+      </div>
+
+      <div class="info-block" id="reviews">
+        <span class="info-label">✅ Đặc điểm</span>
+
+        <ul class="info-list">
+          <li>Nhận đặt bàn nhóm đông</li>
+          <li>Có món lẩu, đồ nướng, hải sản</li>
+          <li>Bia hơi, bia chai, rượu men lá</li>
+          <li>Hỗ trợ Tiếng Việt / English / 日本語</li>
+        </ul>
+      </div>
+    </section>
+  </aside>
+</main>
+
+
+<footer class="site-footer">
+  <p>
+    Điểm Nhậu 39 — trang demo cho chatbot Messenger. Đây không phải hệ thống đặt hàng thật.
+  </p>
+</footer>
+
+
+<!-- ============ MESSENGER-STYLE CHAT WIDGET ============ -->
+<div class="fb-widget">
+
+  <div class="fb-chat-window" id="chatWindow">
+
+    <div class="fb-header">
+      <div class="fb-header-left">
+        <div class="fb-avatar">🍻</div>
+
+        <div class="fb-header-text">
+          <div class="fb-name">Điểm Nhậu 39</div>
+          <div class="fb-status">
+            <span class="status-dot"></span>
+            Đang hoạt động
+          </div>
+        </div>
+      </div>
+
+      <button class="fb-close" id="closeChatBtn" aria-label="Đóng">
+        ✕
+      </button>
+    </div>
+
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="typing-label hidden" id="typingLabel"></div>
+
+    <div class="quick-buttons" id="quickReplies"></div>
+
+    <div class="chat-input">
+      <input id="chatInput" type="text" placeholder="Aa" />
+
+      <button id="sendBtn" class="fb-send" aria-label="Gửi">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+
+  <button class="fb-launcher" id="launcher" aria-label="Mở chat">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
+      <path d="M16 2C8.3 2 2 7.6 2 14.5c0 3.9 2 7.4 5.2 9.7L7 29l4.9-2.7c1.3.4 2.7.6 4.1.6 7.7 0 14-5.6 14-12.4S23.7 2 16 2zm1.5 16.7l-3.6-3.8-6.9 3.8 7.5-8 3.7 3.8 6.8-3.8-7.5 8z"/>
+    </svg>
+
+    <span class="fb-launcher-badge" id="launcherBadge">1</span>
+  </button>
+
+</div>
+
+
+<!-- ============ SCRIPT ============ -->
+<script src="script.js"></script>
+
+</body>
+</html>

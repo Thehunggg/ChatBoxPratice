@@ -1,0 +1,17 @@
+{
+  "name": "night-owl-messenger-backend",
+  "version": "1.0.0",
+  "description": "Simple Node.js + Express backend for testing a Facebook Messenger chatbot (Night Owl Izakaya demo).",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
