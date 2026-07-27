@@ -19,6 +19,7 @@ require("dotenv").config();
 const express = require("express");
 
 const app = express();
+app.use(express.static("../frontend/dist"));
 app.use(express.json());
 app.use("/images", express.static("public/images"));
 
